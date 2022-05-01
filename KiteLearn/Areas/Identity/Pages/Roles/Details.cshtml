@@ -1,0 +1,40 @@
+@page
+@model KiteLearn.Areas_Identity_Pages_Roles.DetailsModel
+
+@{
+    ViewBag["Title"] = "DetailsModel";
+}
+
+
+
+<div>
+   <h3 align="center">Role Management. </h3>
+<div align="center"><a href="/adminhome" class="btn btn-outline-primary">Back to Admin</a></div>
+<hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Role.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Role.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Role.NormalizedName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Role.NormalizedName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Role.ConcurrencyStamp)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Role.ConcurrencyStamp)
+        </dd>
+    </dl>
+</div>
+
+
+<div>
+  
+    <a class="btn btn-info" asp-page="./List">Back to List</a>
+</div>

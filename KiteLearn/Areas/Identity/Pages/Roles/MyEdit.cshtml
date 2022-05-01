@@ -1,0 +1,37 @@
+@page
+@model KiteLearn.Areas_Identity_Pages_Roles.MyEditModel
+
+@{
+  ViewData["Title"] = "EditRoles";
+}
+
+
+<h3 align="center">Role Management. </h3>
+<div align="center"><a href="/adminhome" class="btn btn-outline-primary">Back to Admin</a></div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           <input type="hidden" asp-for="Role.Id" />
+            <div class="form-group">
+                <label asp-for="Role.Name" class="control-label"></label>
+                <input asp-for="Role.Name" class="form-control" />
+                <span asp-validation-for="Role.Name" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="Role.NormalizedName" class="control-label"></label>
+                <input asp-for="Role.NormalizedName" class="form-control" />
+                <span asp-validation-for="Role.NormalizedName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-info" asp-page="./List">Back to List</a>
+</div>
+

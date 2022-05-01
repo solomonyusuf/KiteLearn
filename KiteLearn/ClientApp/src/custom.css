@@ -1,0 +1,32 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+body{
+    margin:0px;
+}
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+.btn{margin:3px;}
+.invalid-field{
+  border-color: red;
+  color:red;
+  background-color:white;
+}
+button{margin:3px;}
+.card {
+    border-radius:2px;
+    border: solid;
+    border-color: var(--bs-pink);
+}
+h1, h2,h3,h4 {
+    margin-top: 4px;
+    color: var(--bs-pink);
+}

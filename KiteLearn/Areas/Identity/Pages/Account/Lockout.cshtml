@@ -1,0 +1,32 @@
+﻿@page
+@model LockoutModel
+@{
+    ViewData["Title"] = "Locked out";
+}
+
+<body class="bg-gradient-primary" style="border-color: var(--bs-pink);background: var(--bs-pink);">
+<div class="container" style="background: var(--bs-pink);">
+        <div class="card shadow-lg o-hidden border-0 my-5">
+            <div class="card-body p-0">
+                <div class="row">
+                    
+                    <div class="col-lg-7">
+                        <div class="p-5" style="border-radius: 20px;border: 3.17px none var(--bs-pink) ;">
+                            <h1 style="text-align: center;font-weight: bold;font-style: italic;color: var(--bs-pink);">KiteLearn</h1>
+                            <div class="text-center">
+                             <header>
+    <h1 class="text-danger">@ViewData["Title"]</h1>
+    <p class="text-danger">This account has been locked out, please try again later.</p>
+</header>
+ 
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </body>
+
+   
